@@ -24,14 +24,9 @@
   },
   "dependencies": {
     "@chenfengyuan/vue-countdown": "2",
-    "@formkit/auto-animate": "^0.8.1",
-    "@hypernym/nuxt-anime": "^2.1.1",
     "@iconify-json/fluent": "^1.1.45",
     "@iconify-json/simple-icons": "^1.1.86",
     "@nuxt/ui": "^2.11.1",
-    "@tsparticles/preset-confetti": "^3.0.1",
-    "@tsparticles/vue3": "^3.0.0",
-    "@vue/server-renderer": "^3.4.5",
     "@vueuse/core": "^10.7.0",
     "@vueuse/nuxt": "^10.7.0",
     "nuxt-swiper": "^1.2.2"

@@ -52,9 +52,7 @@ export default defineNuxtConfig({
     'nuxt3-aos',
     'nuxt-swiper',
     'nuxt-headlessui',
-    '@hypernym/nuxt-anime',
     'nuxt-particles',
-    '@formkit/auto-animate'
   ],
 
   particles: {
@@ -62,9 +60,9 @@ export default defineNuxtConfig({
     lazy: true
   },
 
-  anime: {
-    provide: true
-  },
+  // anime: {
+  //   provide: true
+  // },
 
   ui: {
     global: true,
