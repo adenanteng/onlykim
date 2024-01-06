@@ -25,19 +25,19 @@ const taylor = [
 const janda = [
   {
     id: 1,
-    name: 'Warna Ee',
+    name: 'Indigo',
     // desc: '12GB',
     answer: false
   },
   {
     id: 2,
-    name: 'Warna Hijau Miskin',
+    name: 'Hijau Miskin',
     // desc: '16GB',
     answer: false
   },
   {
     id: 3,
-    name: 'Warna Janda',
+    name: 'Janda',
     // desc: '32GB',
     answer: true
   },
@@ -51,13 +51,13 @@ const language = [
   },
   {
     id: 2,
-    name: 'Q Time',
+    name: 'Quality Time',
     // desc: '16GB',
     answer: false
   },
   {
     id: 3,
-    name: 'WOA',
+    name: 'Word of Affirmation',
     // desc: '32GB',
     answer: true
   },
@@ -85,19 +85,19 @@ const ludo = [
 const bank = [
   {
     id: 1,
-    name: '1140024024682',
+    name: 'Richeese Factory',
     // desc: '12GB',
     answer: true
   },
   {
     id: 2,
-    name: '1180022024682',
+    name: 'McDonald\'s',
     // desc: '16GB',
     answer: false
   },
   {
     id: 3,
-    name: '1140024080002',
+    name: 'KFC',
     // desc: '32GB',
     answer: false
   },
@@ -146,16 +146,7 @@ const isFalse = ref(false)
         Yang kamu banget!
       </h1>
       <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
-        Ayo jawab!
-
-        <ULink
-            to="/letter"
-            active-class="text-primary"
-            inactive-class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
-        >
-          Haha
-        </ULink>
-
+        Ayo kamu pasti bisa, semangat.
       </p>
 
 

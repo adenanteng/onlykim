@@ -7,13 +7,14 @@ import Hero from "~/layouts/hero.vue";
 <hero>
 
   <template #left>
-    <h1 class="mt-10 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
-      Selamat Datang, Nurulina Hakim!
-    </h1>
-    <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300" >
-      Untuk memastikan bahwa kamu adalah orang yang berhak atas konten ini mohon untuk luangkan waktunya sebentar ya.
-    </p>
-    <div class="mt-10 flex items-center gap-x-6">
+    <div class="">
+      <h1 class="mt-10 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
+        Selamat Datang, Nurulina Hakim!
+      </h1>
+      <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300" >
+        Yuk verifikasi dulu dirimu.
+      </p>
+      <div class="mt-10 flex items-center gap-x-6">
       <UButton
           to="/inquiry"
           color="primary"
@@ -28,22 +29,24 @@ import Hero from "~/layouts/hero.vue";
         </template>
       </UButton>
     </div>
+    </div>
 
   </template>
 
   <template #right>
-    <div class="max-w-3xl flex-none sm:max-w-5xl ">
-      <div class="" >
-        <Swiper
-            :modules="[SwiperAutoplay, SwiperEffectCreative]"
-            :slides-per-view="1"
-            :loop="true"
-            :effect="'creative'"
-            :autoplay="{
+    <div class="fixed">
+      <div class="max-w-3xl flex-none sm:max-w-5xl ">
+        <div class="" >
+          <Swiper
+              :modules="[SwiperAutoplay, SwiperEffectCreative]"
+              :slides-per-view="1"
+              :loop="true"
+              :effect="'creative'"
+              :autoplay="{
               delay: 5000,
               disableOnInteraction: true,
             }"
-            :creative-effect="{
+              :creative-effect="{
               prev: {
                 shadow: false,
                 translate: ['-0%', 0, -1],
@@ -52,15 +55,17 @@ import Hero from "~/layouts/hero.vue";
                 translate: ['100%', 0, 0],
               },
             }"
-        >
-          <SwiperSlide v-for="slide in 3" :key="slide" class="rounded-3xl">
-            <div class="">
-              <img :src="'/img/hero'+slide+'.jpg'" alt="" class="w-[65rem] rounded-3xl shadow-2xl"/>
-            </div>
-          </SwiperSlide>
-        </Swiper>
+          >
+            <SwiperSlide v-for="slide in 3" :key="slide" class="rounded-3xl">
+              <div class="">
+                <img :src="'/img/hero'+slide+'.jpg'" alt="" class="w-[65rem] rounded-3xl shadow-2xl"/>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
     </div>
+
   </template>
 </hero>
 </template>

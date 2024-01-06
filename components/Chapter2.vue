@@ -3,43 +3,55 @@
 const why = [
   {
     id: 1,
-    title: 'Hatinya lembut bangetttt',
-    icon: 'i-fluent-home-20-filled',
-    desc: '2d ago',
+    icon: 'i-fluent-chat-multiple-heart-20-filled',
+    title: 'Hatinya selembut sutra',
+    desc: 'Hati-hati, sangat rentan menangis. ouch.',
   },
   {
     id: 2,
-    title: 'Kadang kadang needy',
-    icon: 'i-fluent-animal-turtle-20-filled',
-    desc: '2d ago',
+    icon: 'i-fluent-surface-earbuds-20-filled',
+    title: 'Noise Free',
+    desc: 'Kalo ketemu tuh bawaannya damai, nyaman, adem nan tenang.',
   },
   {
     id: 3,
-    title: 'Mandiri tapi juga needy',
-    icon: 'i-fluent-access-time-20-filled',
-    desc: '2d ago',
+    icon: 'i-fluent-hand-open-heart-20-filled',
+    title: 'Mandiri tapi needy',
+    desc: 'Aneh kan? iyalah, aku juga bingung kek mana coba.',
   },
   {
     id: 4,
-    title: 'Sat set bisa diandalkan',
     icon: 'i-fluent-rocket-20-filled',
-    desc: '2d ago',
+    title: 'Reliable',
+    desc: 'Bisa banget dimintain tolong dan disuruh-suruh. Haha. Unbreakable.',
+  },
+  {
+    id: 5,
+    icon: 'i-fluent-speaker-off-20-filled',
+    title: 'Can\'t say anything carelessly',
+    desc: 'Ingat perkataan apapun, kapanpun, dimanapun, tabik pun, ya pun.',
+  },
+  {
+    id: 6,
+    icon: 'i-fluent-animal-cat-20-filled',
+    title: 'The groomer',
+    desc: 'Senantiasa selalu merawat diri serta doyan vc pacarnya kalo lagi dandan.',
   },
 
 ]
 </script>
 
 <template>
-  <div class="space-y-5" v-aos="['animate__slideInUp']" >
+  <div class="space-y-5" v-aos="['animate__fadeInUpBig']" >
     <h1 class="text-4xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-3xl hover:animate-bounce">
       Chapter II: Yesterday
     </h1>
 
     <div class="px-5 py-3 bg-white/20 dark:bg-gray-900/20 backdrop-blur-sm rounded-3xl shadow-lg border border-gray-300 dark:border-gray-600 hover:scale-105 transition duration-500">
-      Terima kasih banyak atas ucapan selamat ulang tahunnya ya,
-      <b>Kadonya manaaaaaaaa!!!</b>
-      dan juga terima kasih untuk email-email kamu yang banyak nan panjang lebar itu.
-      Ternyata kamu memperhatikan banyak hal tentang aku ya, <i>duh jadi takut hahaha</i>.
+      Terima kasih banyak untuk ucapan selamat ulang tahunnya ya,
+      <span class="font-bold">Kadonya manaaaaaaaa haaaaa!!!</span>
+      dan terima kasih juga untuk email-email kamu yang banyak nan panjang lebar itu.
+      Aku jadi gak tau harus balesnya kek gimana. Tuhan, tolongin Aden ya tuhan.
     </div>
 
     <div class="">
@@ -78,13 +90,13 @@ const why = [
       Cons and Pros of dating Kim
     </h3>
 
-    <div class="grid grid-cols-2 gap-5">
+    <div class="grid md:grid-cols-2 gap-5">
       <template v-for="item in why">
         <div class="group bg-white/20 dark:bg-gray-900/20 backdrop-blur-sm px-4 py-4 rounded-3xl border border-gray-300 dark:border-gray-600 hover:scale-105 shadow-lg transition duration-500">
-          <div class="flex justify-start items-center gap-2">
+          <div class="grid justify-start items-center gap-2">
             <UIcon :name="item.icon" class="text-6xl text-gray-900 dark:text-gray-100 group-hover:text-primary-600 transition duration-500" />
             <div>
-              <h3 class=" font-medium text-gray-900 dark:text-white">{{ item.title }}</h3>
+              <h3 class="font-medium text-gray-900 dark:text-white">{{ item.title }}</h3>
               <p class="text-sm text-gray-600 dark:text-gray-300">{{ item.desc }}</p>
             </div>
 
@@ -94,8 +106,9 @@ const why = [
 
     </div>
 
-    <div class="px-5 py-3 bg-green-600/50 backdrop-blur-sm rounded-3xl shadow-lg hover:scale-105 transition duration-500">
-      Aku sih gapapa ya walaupun cuma keliatan ganteng seminggu sekali.
+    <div class="relative px-5 py-3 bg-green-600/35 backdrop-blur-sm rounded-3xl shadow-lg hover:scale-105 transition duration-500">
+      <UIcon name="i-fluent-shield-error-20-filled" class="text-4xl absolute -top-4 -left-3 transform text-green-600 dark:text-green-600 animate-pulse" />
+      Aku sih gapapa ya walaupun cuma keliatan gantengnya seminggu sekali, kalo ganteng tiap hari kasian sama Mark.
     </div>
 
   </div>

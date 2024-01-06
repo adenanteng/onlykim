@@ -7,14 +7,14 @@ const anni = new Date('2024-06-28');
 </script>
 
 <template>
-  <div class="space-y-5" v-aos="['animate__slideInUp']" >
+  <div class="space-y-5" v-aos="['animate__fadeInUpBig']" >
     <h1 class="text-4xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-3xl hover:animate-bounce">
-      Chapter IV: Future
+      Chapter IV: Tomorrow
       <UIcon name="i-fluent-rocket-20-regular" class="ml-2"/>
     </h1>
 
     <div class="px-5 py-3 bg-white/20 dark:bg-gray-900/20 backdrop-blur-sm rounded-3xl shadow-lg border border-gray-300 dark:border-gray-600 hover:scale-105 transition duration-500">
-      i'm not the best man you've ever met, but i'll always do my best to keep you happy, i want to show you what real
+      I'm not the best man you've ever met, but i'll always do my best to keep you happy, i want to show you what real
       love looks like and i want to give you the love i never got. No matter what happens i will always be with you
       and do my best because you deserve the world.
     </div>
@@ -24,11 +24,10 @@ const anni = new Date('2024-06-28');
         <div class="mx-auto max-w-7xl py-12 px-6 sm:py-16 lg:px-8 lg:py-20">
           <div class="mx-auto max-w-4xl text-center">
             <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Trusted by developers from over 80 planets
+              One year anniversary countdown
             </h2>
             <p class="mt-3 text-xl text-indigo-200 sm:mt-4">
-              Lorem ipsum dolor, sit amet consectetur adipisicing
-              elit. Repellendus repellat laudantium.
+              can we go beyond it? let's see tomorrow.
             </p>
           </div>
           <ClientOnly>
@@ -57,6 +56,10 @@ const anni = new Date('2024-06-28');
           </ClientOnly>
         </div>
       </div>
+    </div>
+
+    <div class="px-5 py-3 bg-white/20 dark:bg-gray-900/20 backdrop-blur-sm rounded-3xl shadow-lg border border-gray-300 dark:border-gray-600 hover:scale-105 transition duration-500">
+      Terima kasih kamu telah hadir dan membawa kebahagiaan di hidup aku. Bisakah kita terus bahagia bersama?. See you.
     </div>
 
   </div>

@@ -3,14 +3,14 @@
 </script>
 
 <template>
-  <div class="space-y-5" v-aos="['animate__slideInUp']" >
+  <div class="space-y-5" v-aos="['animate__fadeInUpBig']" >
     <h1 class="text-4xl font-semibold tracking-tight text-gray-900 dark:text-white sm:text-3xl hover:animate-bounce">
       Chapter III: Today
     </h1>
 
     <div class="px-5 py-3 bg-white/20 dark:bg-gray-900/20 backdrop-blur-sm rounded-3xl shadow-lg border border-gray-300 dark:border-gray-600 hover:scale-105 transition duration-500">
-      Hari ini kamu lagi di Baliiiiiiiiiiiiiiiiiiiiiiii. Kira-kira aku dapet oleh-oleh apa yaaa 😍. Dan kamu lagi bahas Mark sama mantan aku, dih.
-      Sungguh suatu kelakuan yang sangat tidak menyenangkan tau gak!. Sampe ga habis pikir kenapa kamu segitunya sama Mark.
+      Hari ini kamu lagi di Baliiiiiiiiiiiiiiiiiiiiiiii. Kira-kira aku dapet oleh-oleh apa yaaa <span class="text-gray-600 dark:text-gray-400">(ngarep banget ya)</span> 😍. Dan kamu lagi bahas Mark sama mantan aku, dih.
+      Sungguh suatu kelakuan yang sangat tidak menyenangkan tau gak!. Nanti aku laporin pak pulici atas perbuatan tidak menyenangkan!
     </div>
 
     <div class="">
@@ -19,7 +19,7 @@
           <div class="rounded-t-3xl px-6 py-8 sm:px-10 sm:pt-10 sm:pb-8">
 <!--            <img src="https://tailwindui.com/img/logos/workcation-logo-indigo-600-mark-gray-800-and-indigo-600-text.svg" alt="Workcation" class="h-8"/>-->
             <div class="relative mt-8 text-lg font-medium text-gray-900 dark:text-white">
-              <svg class="absolute top-0 left-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-300 dark:text-gray-600" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
+              <svg class="absolute top-0 left-0 h-8 w-8 -translate-x-3 -translate-y-2 transform text-gray-300 dark:text-gray-500" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
                 <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"/>
               </svg>
               <p class="relative text-4xl font-bold">
@@ -41,6 +41,10 @@
           </cite>
         </blockquote>
       </div>
+    </div>
+
+    <div class="px-5 py-3 bg-white/20 dark:bg-gray-900/20 backdrop-blur-sm rounded-3xl shadow-lg border border-gray-300 dark:border-gray-600 hover:scale-105 transition duration-500">
+      Tulisan ini aku kasih kalo kamu udah nyampe rumah, sudah selamat sampai tujuan, sudah cukup istirahat dan siap untuk berantem lagi oteyyy.
     </div>
 
     <div class="py-20">
@@ -74,12 +78,11 @@
                 <div class="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
                   <div class="text-base font-medium text-gray-900 dark:text-white">Nurulina Hakim</div>
 
-                  <svg class="mx-1 hidden h-5 w-5 text-indigo-600 md:block" fill="currentColor"
-                       viewBox="0 0 20 20">
+                  <svg class="mx-1 hidden h-5 w-5 text-primary-600 md:block" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M11 0h3L9 20H6l5-20z"/>
                   </svg>
 
-                  <div class="text-base font-medium text-gray-500 dark:text-gray-500">05 Januari 2024</div>
+                  <div class="text-base font-medium text-gray-500 dark:text-gray-400">Orang Mumet</div>
                 </div>
               </div>
             </footer>
@@ -93,6 +96,9 @@
       Come on babe, take ur time. harusnya kamu yang lupa sama aku bukan sebaliknya. nikmati waktumu. liburan kok main HP.
     </div>
 
+    <div class="px-5 py-3 bg-white/20 dark:bg-gray-900/20 backdrop-blur-sm rounded-3xl shadow-lg border border-gray-300 dark:border-gray-600 hover:scale-105 transition duration-500">
+      Kamu itu ngangenin tau 😤, males banget jauh-jauh dari kamu 😤.
+    </div>
 
   </div>
 </template>

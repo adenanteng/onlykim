@@ -124,10 +124,10 @@ onMounted(() => {
 <!--    </div>-->
 
 <!--    <div class="mx-auto max-w-7xl ">-->
-      <div class="mx-auto max-w-7xl lg:grid lg:grid-cols-5 overflow-hidden py-28">
+      <div class="mx-auto max-w-7xl lg:grid lg:grid-cols-5 lg:space-x-10 overflow-hidden py-28">
         <div class="lg:col-span-2 px-10 py-5 ">
-          <div class="lg:fixed lg:top-0 lg:bottom-0 grid items-center w-full">
-            <div class="">
+          <div class="lg:fixed lg:top-0 lg:bottom-0 grid items-center">
+            <div class="lg:max-w-lg">
               <ClientOnly>
                 <button
                     @click="isDark = !isDark"
