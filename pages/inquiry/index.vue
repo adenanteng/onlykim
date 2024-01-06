@@ -1,0 +1,284 @@
+<script setup lang="ts">
+import Hero from "~/layouts/hero.vue";
+
+const ktp = '1871035903000003'
+const taylor = [
+  {
+    id: 1,
+    name: 'Taylor Swift',
+    // desc: '12GB',
+    answer: true
+  },
+  {
+    id: 2,
+    name: 'Paramore',
+    // desc: '16GB',
+    answer: false
+  },
+  {
+    id: 3,
+    name: 'Tulus',
+    // desc: '32GB',
+    answer: false
+  },
+]
+const janda = [
+  {
+    id: 1,
+    name: 'Warna Ee',
+    // desc: '12GB',
+    answer: false
+  },
+  {
+    id: 2,
+    name: 'Warna Hijau Miskin',
+    // desc: '16GB',
+    answer: false
+  },
+  {
+    id: 3,
+    name: 'Warna Janda',
+    // desc: '32GB',
+    answer: true
+  },
+]
+const language = [
+  {
+    id: 1,
+    name: 'Physical Attack',
+    // desc: '12GB',
+    answer: false
+  },
+  {
+    id: 2,
+    name: 'Q Time',
+    // desc: '16GB',
+    answer: false
+  },
+  {
+    id: 3,
+    name: 'WOA',
+    // desc: '32GB',
+    answer: true
+  },
+]
+const ludo = [
+  {
+    id: 1,
+    name: 'Mobile Legends',
+    // desc: '12GB',
+    answer: false
+  },
+  {
+    id: 2,
+    name: 'Ludo',
+    // desc: '16GB',
+    answer: true
+  },
+  {
+    id: 3,
+    name: 'PUBG Mobile',
+    // desc: '32GB',
+    answer: true
+  },
+]
+const bank = [
+  {
+    id: 1,
+    name: '1140024024682',
+    // desc: '12GB',
+    answer: true
+  },
+  {
+    id: 2,
+    name: '1180022024682',
+    // desc: '16GB',
+    answer: false
+  },
+  {
+    id: 3,
+    name: '1140024080002',
+    // desc: '32GB',
+    answer: false
+  },
+]
+
+const formKtp = ref()
+const formTaylor = ref()
+const formJanda = ref()
+const formLanguage = ref()
+const formLudo = ref()
+const formBank = ref()
+
+const finish = () => {
+  // console.log(formTaylor.value.answer)
+  if (formKtp.value==ktp &&
+      formTaylor.value.answer &&
+      formJanda.value.answer &&
+      formLanguage.value.answer &&
+      formLudo.value.answer &&
+      formBank.value.answer)
+  {
+    console.log('Yeayyyy')
+    isTrue.value=true
+  } else {
+    console.log('Try Again')
+    formKtp.value=null
+    formTaylor.value=null
+    formJanda.value=null
+    formLanguage.value=null
+    formLudo.value=null
+    formBank.value=null
+    isFalse.value=true
+  }
+};
+
+const isTrue = ref(false)
+const isFalse = ref(false)
+
+</script>
+
+<template>
+  <hero>
+
+    <template #left>
+      <h1 class="mt-10 text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-6xl">
+        Yang kamu banget!
+      </h1>
+      <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300">
+        Ayo jawab!
+
+        <ULink
+            to="/letter"
+            active-class="text-primary"
+            inactive-class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+        >
+          Haha
+        </ULink>
+
+      </p>
+
+
+    </template>
+
+    <template #right>
+      <div class="grid gap-8 w-full">
+        <div class="">
+          <!--          <InputLabel value="NIK" />-->
+          <UInput
+              v-model="formKtp"
+              type="tel"
+              size="xl"
+              color="primary"
+              class="shadow-lg rounded-full bg-white/20 dark:bg-gray-900/20 backdrop-blur-sm"
+              :ui="{ rounded: 'rounded-full' }"
+              placeholder="Masukkan NIK"
+              autofocus
+          />
+        </div>
+
+        <div class="">
+          <!--          <InputLabel value="Musisi Favorit" />-->
+          <InputRadio
+              v-model="formTaylor"
+              :options="taylor"
+          />
+        </div>
+
+        <div class="">
+          <InputRadio
+              v-model="formJanda"
+              :options="janda"
+          />
+        </div>
+
+        <div class="">
+          <InputRadio
+              v-model="formLanguage"
+              :options="language"
+          />
+        </div>
+
+        <div class="">
+          <InputRadio
+              v-model="formLudo"
+              :options="ludo"
+          />
+        </div>
+
+        <div class="">
+          <InputRadio
+              v-model="formBank"
+              :options="bank"
+          />
+        </div>
+
+        <div class="flex justify-end">
+          <UButton
+              @click="finish()"
+              color="primary"
+              variant="solid"
+              size="xl"
+              class="group "
+              :ui="{ rounded: 'rounded-full' }"
+              label="Selesai"
+              :disabled="formKtp==null ||
+                        formTaylor==null ||
+                        formJanda==null ||
+                        formLanguage==null ||
+                        formLudo==null ||
+                        formBank==null"
+          >
+            <template #trailing>
+              <UIcon name="i-heroicons-chevron-right-20-solid" class="group-hover:ml-10"/>
+            </template>
+          </UButton>
+        </div>
+      </div>
+
+
+    </template>
+  </hero>
+
+  <UModal
+      v-model="isTrue"
+      :ui="{ rounded: 'rounded-3xl' }"
+  >
+    <div class="p-4 grid justify-center gap-2">
+      <UIcon name="i-heroicons-check-circle" class="text-primary text-4xl animate-pulse" />
+      <div class="">
+        <h3 class="font-medium">Yeayyyyy jawaban kamu benar</h3>
+        <p class="text-gray-500 dark:text-gray-200">Kamu berhak mendapat doorprize.</p>
+      </div>
+      <div class="">
+        <UButton
+            to="/letter"
+            color="primary"
+            variant="solid"
+            size="xl"
+            class="group "
+            :ui="{ rounded: 'rounded-full' }"
+            label="Gasss"
+        >
+          <template #trailing>
+            <UIcon name="i-fluent-arrow-right-20-regular" class="group-hover:ml-10"/>
+          </template>
+        </UButton>
+      </div>
+
+    </div>
+  </UModal>
+
+  <UModal
+      v-model="isFalse"
+      :ui="{ rounded: 'rounded-3xl' }"
+  >
+    <div class="p-4 grid justify-center gap-2">
+      <UIcon name="i-heroicons-exclamation-triangle" class="text-primary text-4xl animate-pulse" />
+      <div class="">
+        <h3 class="font-medium">Yhaaaaa jawaban kamu salah</h3>
+        <p class="text-gray-500 dark:text-gray-200">Yuk coba lagi yuk bisa yuk.</p>
+      </div>
+    </div>
+  </UModal>
+</template>
