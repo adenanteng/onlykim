@@ -31,6 +31,7 @@
     "@nuxt/ui": "^2.11.1",
     "@tsparticles/preset-confetti": "^3.0.1",
     "@tsparticles/vue3": "^3.0.0",
+    "@vue/server-renderer": "^3.4.5",
     "@vueuse/core": "^10.7.0",
     "@vueuse/nuxt": "^10.7.0",
     "nuxt-swiper": "^1.2.2"
