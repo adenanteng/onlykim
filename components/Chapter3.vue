@@ -44,7 +44,7 @@
     </div>
 
     <div class="px-5 py-3 bg-white/20 dark:bg-gray-900/20 backdrop-blur-sm rounded-3xl shadow-lg border border-gray-300 dark:border-gray-600 hover:scale-105 transition duration-500">
-      Tulisan ini aku kasih kalo kamu udah nyampe rumah, sudah selamat sampai tujuan, sudah cukup istirahat dan siap untuk berantem lagi oteyyy.
+      Tulisan ini aku kasih kalo kamu udah nyampe rumah aja ya, sudah selamat sampai tujuan, sudah cukup istirahat dan siap untuk berantem lagi oteyyy.
     </div>
 
     <div class="py-20">
@@ -70,11 +70,11 @@
             </div>
             <footer class="mt-8">
               <div class="md:flex md:items-center md:justify-center">
-<!--                <div class="md:flex-shrink-0">-->
-<!--                  <img class="mx-auto h-10 w-10 rounded-full"-->
-<!--                       src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"-->
-<!--                       alt=""/>-->
-<!--                </div>-->
+                <div class="md:flex-shrink-0">
+                  <img class="mx-auto h-10 w-10 rounded-full"
+                       src="/img/nurulina.jpg"
+                       alt=""/>
+                </div>
                 <div class="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
                   <div class="text-base font-medium text-gray-900 dark:text-white">Nurulina Hakim</div>
 
