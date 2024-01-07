@@ -27,7 +27,7 @@ const anni = new Date('2024-06-28');
               One year anniversary countdown
             </h2>
             <p class="mt-3 text-xl text-indigo-200 sm:mt-4">
-              can we go beyond it? let's see tomorrow.
+              can we make it? let's see tomorrow.
             </p>
           </div>
           <ClientOnly>
@@ -47,7 +47,7 @@ const anni = new Date('2024-06-28');
                   <dd class="order-1 text-5xl font-bold tracking-tight text-white">{{ minutes }}</dd>
                 </div>
                 <div class="mt-10 flex flex-col sm:mt-0">
-                  <dt class="order-2 mt-2 text-lg font-medium leading-6 text-primary-200">Menit</dt>
+                  <dt class="order-2 mt-2 text-lg font-medium leading-6 text-primary-200">Detik</dt>
                   <dd class="order-1 text-5xl font-bold tracking-tight text-white">{{ seconds }}</dd>
                 </div>
               </dl>
@@ -59,7 +59,12 @@ const anni = new Date('2024-06-28');
     </div>
 
     <div class="px-5 py-3 bg-white/20 dark:bg-gray-900/20 backdrop-blur-sm rounded-3xl shadow-lg border border-gray-300 dark:border-gray-600 hover:scale-105 transition duration-500">
-      Terima kasih kamu telah hadir dan membawa kebahagiaan di hidup aku. Bisakah kita terus bahagia bersama?. See you.
+      Terima kasih kamu telah hadir dan membawa kebahagiaan di hidup aku. Semoga kita bisa berbagi kebahagiaan terus. See you.
+    </div>
+
+    <div class="py-3">
+      <p>Sincerely,</p>
+      <h4 class="font-medium text-lg">Yours, Aden Anteng.</h4>
     </div>
 
   </div>
