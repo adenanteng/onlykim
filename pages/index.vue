@@ -12,22 +12,23 @@ import Hero from "~/layouts/hero.vue";
         Selamat Datang, Nurulina Hakim!
       </h1>
       <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-gray-300" >
-        Yuk verifikasi dulu dirimu.
+<!--        Yuk verifikasi dulu dirimu.-->
+        Nanti ya, nurulnya lagi ngambek.
       </p>
       <div class="mt-10 flex items-center gap-x-6">
-      <UButton
-          to="/inquiry"
-          color="primary"
-          variant="solid"
-          size="xl"
-          class="group transition duration-500 hover:scale-105"
-          :ui="{ rounded: 'rounded-full' }"
-          label="Mulai"
-      >
-        <template #trailing>
-          <UIcon name="i-fluent-arrow-right-20-regular" class="group-hover:ml-10"/>
-        </template>
-      </UButton>
+<!--      <UButton-->
+<!--          to="/inquiry"-->
+<!--          color="primary"-->
+<!--          variant="solid"-->
+<!--          size="xl"-->
+<!--          class="group transition duration-500 hover:scale-105"-->
+<!--          :ui="{ rounded: 'rounded-full' }"-->
+<!--          label="Mulai"-->
+<!--      >-->
+<!--        <template #trailing>-->
+<!--          <UIcon name="i-fluent-arrow-right-20-regular" class="group-hover:ml-10"/>-->
+<!--        </template>-->
+<!--      </UButton>-->
     </div>
     </div>
 
