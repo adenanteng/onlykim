@@ -13,8 +13,7 @@
     </div>
 
     <div class="px-5 py-3 bg-white/20 dark:bg-gray-900/20 backdrop-blur-sm rounded-3xl shadow-lg border border-gray-300 dark:border-gray-600 hover:scale-105 transition duration-500">
-      Aku itu bingung mau balas email-email bejibun itu kek gimana, aku coba balas disini ya, semoga
-      tidak mengecewakan kamu.
+      Aku itu bingung mau balas email-email kamu yang bejibun itu kek gimana, aku coba balas disini ya, selamat membaca.
     </div>
 
     <img src="/img/hero1.jpg"

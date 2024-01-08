@@ -108,7 +108,7 @@ const why = [
 
     <div class="relative px-5 py-3 bg-green-600/35 backdrop-blur-sm rounded-3xl shadow-lg hover:scale-105 transition duration-500">
       <UIcon name="i-fluent-shield-error-20-filled" class="text-4xl absolute -top-4 -left-3 transform text-green-600 dark:text-green-600 animate-pulse" />
-      Aku sih gapapa ya walaupun cuma keliatan gantengnya seminggu sekali, kalo ganteng tiap hari kasian sama Mark.
+      Aku sih gapapa ya walaupun cuma keliatan gantengnya seminggu sekali, kalo ganteng tiap hari kasihan Mark gak kamu idolain lagi.
     </div>
 
   </div>

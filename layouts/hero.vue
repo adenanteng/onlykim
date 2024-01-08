@@ -178,7 +178,7 @@ onMounted(() => {
                 >
                   <UIcon
                       :name="isDark ? 'i-fluent-weather-moon-20-regular' : 'i-fluent-weather-sunny-20-regular'"
-                      class="text-4xl text-primary "
+                      class="text-4xl text-primary-600 hover:text-white"
                   />
                 </button>
               </ClientOnly>

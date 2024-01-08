@@ -100,5 +100,44 @@
       Kamu itu ngangenin tau 😤, males banget jauh-jauh dari kamu 😤.
     </div>
 
+    <UDivider
+        label="Tambahan"
+        :ui="{
+          label: 'text-gray-900 dark:text-white',
+          border: {
+            base: 'flex border-gray-900 dark:border-white'
+          }
+        }"
+    />
+
+    <div class="px-5 py-3 bg-white/20 dark:bg-gray-900/20 backdrop-blur-sm rounded-3xl shadow-lg border border-gray-300 dark:border-gray-600 hover:scale-105 transition duration-500">
+      Lagi dan lagi adaaaaa aja, heran deh aku mah. Bisa-bisanya kamu ketemu Ginda, ngapain pula ngobrolin mantan haaaa, itu udah 6 tahun lalu,
+      orangnya udah punya anak dua loh ya ngapain masih dibahas 😤. Akutu ga ada urusan sama Ginda, ngobrol aja gak pernah loh.
+    </div>
+
+    <div class="px-5 py-3 bg-white/20 dark:bg-gray-900/20 backdrop-blur-sm rounded-3xl shadow-lg border border-gray-300 dark:border-gray-600 hover:scale-105 transition duration-500">
+      Aku capek sebenernya udah bertahun-tahun lalu masih aja dibahas. Walaupun hubungan aku sama dia itu urban legend tapi pleaseeeee itu kan dulu.
+    </div>
+
+    <div class="px-5 py-3 bg-white/20 dark:bg-gray-900/20 backdrop-blur-sm rounded-3xl shadow-lg border border-gray-300 dark:border-gray-600 hover:scale-105 transition duration-500">
+      Sebenernya aku itu gamau ada mantan ditulisan ini tapi ya gimana, mungkin media ini bisa jadi bahan klarifikasi yang pas untuk kita.
+    </div>
+
+    <div class="ml-5">
+      <ul class="ml-5 space-y-2 font-medium text-lg list-disc">
+        <li class="hover:scale-105 transition duration-500">Sekarang aku sama kamu,</li>
+        <li class="hover:scale-105 transition duration-500">Aku maunya sama kamu,</li>
+        <li class="hover:scale-105 transition duration-500">Sayangnya sama kamu,</li>
+        <li class="hover:scale-105 transition duration-500">Sukanya sama kamu,</li>
+        <li class="hover:scale-105 transition duration-500">Cintanya sama kamu,</li>
+        <li class="hover:scale-105 transition duration-500">Pokoknya sama kamu.</li>
+      </ul>
+    </div>
+
+    <div class="ml-5 font-bold text-5xl transition duration-500 hover:scale-105">
+      Ngerti gak?
+    </div>
+
+
   </div>
 </template>
