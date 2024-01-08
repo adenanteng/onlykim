@@ -120,7 +120,7 @@ onMounted(() => {
 <!--    </div>-->
 
     <div
-        class="absolute bg-yellow-400 -z-10 rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none blur-2xl"
+        class="absolute bg-yellow-400 -z-10 rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none blur-2xl transition duration-500"
         :style="{
         opacity,
         left: `${x}px`,
