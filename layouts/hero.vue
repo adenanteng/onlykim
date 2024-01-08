@@ -1,6 +1,15 @@
 <script setup lang="ts">
 import type { Container } from 'tsparticles-engine'
 
+useSeoMeta({
+  title: 'Only Kim',
+  ogTitle: 'Just for Kim',
+  description: 'Sudah ku bilang ini hanya untuk Kim.',
+  ogDescription: 'Sudah ku bilang ini hanya untuk Kim.',
+  ogImage: 'https://onlykim.vercel.app/img/hero1.jpg',
+  twitterCard: 'summary_large_image',
+})
+
 // See tsParticles documentation for all available options
 const options = {
   background: {
@@ -120,7 +129,7 @@ onMounted(() => {
 <!--    </div>-->
 
     <div
-        class="absolute bg-yellow-400 -z-10 rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none blur-2xl transition duration-500"
+        class="absolute bg-yellow-400 -z-10 rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none blur-2xl"
         :style="{
         opacity,
         left: `${x}px`,
