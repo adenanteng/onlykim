@@ -20,7 +20,7 @@ import Hero from "~/layouts/hero.vue";
           color="primary"
           variant="solid"
           size="xl"
-          class="group "
+          class="group transition duration-500 hover:scale-105"
           :ui="{ rounded: 'rounded-full' }"
           label="Mulai"
       >

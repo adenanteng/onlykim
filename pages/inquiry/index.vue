@@ -82,23 +82,42 @@ const ludo = [
     answer: true
   },
 ]
-const bank = [
+const fastFood = [
   {
     id: 1,
-    name: 'Richeese Factory',
-    // desc: '12GB',
-    answer: true
+    img: '/img/KFC.png',
+    name: 'KFC',
+    desc: 'It\'s Finger Lickin Good',
+    answer: false
   },
   {
     id: 2,
-    name: 'McDonald\'s',
-    // desc: '16GB',
+    img: '/img/MCD.png',
+    name: 'McDonalds',
+    desc: 'I\'m Lovin it',
     answer: false
   },
   {
     id: 3,
-    name: 'KFC',
-    // desc: '32GB',
+    img: '/img/RICHEESE.png',
+    name: 'Richeese Factory',
+    desc: 'Life is GREAT. CHEESE makes it BETTER',
+    answer: true
+  },
+]
+const mineral = [
+  {
+    id: 1,
+    img: '/img/LEMINERALE.png',
+    name: 'Le Minerale',
+    desc: 'Kayak ada manis-manisnya',
+    answer: true
+  },
+  {
+    id: 2,
+    img: '/img/AQUA.svg',
+    name: 'Aqua',
+    desc: 'Kemurnian Untuk Masa Depan',
     answer: false
   },
 ]
@@ -108,7 +127,8 @@ const formTaylor = ref()
 const formJanda = ref()
 const formLanguage = ref()
 const formLudo = ref()
-const formBank = ref()
+const formFastFood = ref()
+const formMineral = ref()
 
 const finish = () => {
   // console.log(formTaylor.value.answer)
@@ -117,7 +137,9 @@ const finish = () => {
       formJanda.value.answer &&
       formLanguage.value.answer &&
       formLudo.value.answer &&
-      formBank.value.answer)
+      formFastFood.value.answer &&
+      formMineral.value.answer
+      )
   {
     console.log('Yeayyyy')
     isTrue.value=true
@@ -128,7 +150,8 @@ const finish = () => {
     formJanda.value=null
     formLanguage.value=null
     formLudo.value=null
-    formBank.value=null
+    formFastFood.value=null
+    formMineral.value=null
     isFalse.value=true
   }
 };
@@ -161,7 +184,7 @@ const isFalse = ref(false)
               type="tel"
               size="xl"
               color="primary"
-              class="shadow-lg rounded-full bg-white/20 dark:bg-gray-900/20 backdrop-blur-sm"
+              class="shadow-lg rounded-full bg-white/20 dark:bg-gray-900/20 backdrop-blur-sm transition duration-500 hover:scale-105"
               :ui="{ rounded: 'rounded-full' }"
               placeholder="Masukkan NIK"
               autofocus
@@ -184,6 +207,13 @@ const isFalse = ref(false)
         </div>
 
         <div class="">
+          <InputRadioGrid
+              v-model="formMineral"
+              :options="mineral"
+          />
+        </div>
+
+        <div class="">
           <InputRadio
               v-model="formLanguage"
               :options="language"
@@ -198,9 +228,9 @@ const isFalse = ref(false)
         </div>
 
         <div class="">
-          <InputRadio
-              v-model="formBank"
-              :options="bank"
+          <InputRadioGrid
+              v-model="formFastFood"
+              :options="fastFood"
           />
         </div>
 
@@ -210,7 +240,7 @@ const isFalse = ref(false)
               color="primary"
               variant="solid"
               size="xl"
-              class="group "
+              class="group transition duration-500 hover:scale-105"
               :ui="{ rounded: 'rounded-full' }"
               label="Selesai"
               :disabled="formKtp==null ||
@@ -218,7 +248,8 @@ const isFalse = ref(false)
                         formJanda==null ||
                         formLanguage==null ||
                         formLudo==null ||
-                        formBank==null"
+                        formFastFood==null ||
+                        formMineral==null"
           >
             <template #trailing>
               <UIcon name="i-heroicons-chevron-right-20-solid" class="group-hover:ml-10"/>
@@ -247,7 +278,7 @@ const isFalse = ref(false)
             color="primary"
             variant="solid"
             size="xl"
-            class="group "
+            class="group transition duration-500 hover:scale-105"
             :ui="{ rounded: 'rounded-full' }"
             label="Gasss"
         >

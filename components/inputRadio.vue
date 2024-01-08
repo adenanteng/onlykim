@@ -1,6 +1,11 @@
 <script setup lang="ts">
 
-import {RadioGroup, RadioGroupDescription, RadioGroupLabel, RadioGroupOption} from "@headlessui/vue";
+import {
+  RadioGroup,
+  RadioGroupDescription,
+  RadioGroupLabel,
+  RadioGroupOption
+} from "@headlessui/vue";
 
 // defineProps(['modelValue'])
 defineEmits(['update:modelValue'])
@@ -20,7 +25,7 @@ defineProps({
         :modelValue="modelValue"
         @update:modelValue="value => $emit('update:modelValue', value)"
     >
-      <div class="rounded-3xl bg-white/20 dark:bg-gray-900/20 backdrop-blur-sm shadow-lg border border-gray-200 dark:border-gray-700 ">
+      <div class="rounded-3xl bg-white/20 dark:bg-gray-900/20 backdrop-blur-sm shadow-lg border border-gray-200 dark:border-gray-700 transition duration-500 hover:scale-105">
         <RadioGroupOption
             as="template"
             v-for="(plan, index) in options"
@@ -30,7 +35,7 @@ defineProps({
         >
           <div
               :class="[
-                    active ? '': '', checked ? 'bg-primary text-white ' : ' ',
+                    active ? '' : '', checked ? 'bg-primary text-white ' : ' ',
                     index == 0 ? 'rounded-t-3xl' : '',
                     index == options.length - 1 ? 'rounded-b-3xl' : '' ]"
               class="relative flex cursor-pointer px-5 py-3 focus:outline-none">

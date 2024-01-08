@@ -82,7 +82,7 @@
                     <path d="M11 0h3L9 20H6l5-20z"/>
                   </svg>
 
-                  <div class="text-base font-medium text-gray-500 dark:text-gray-400">Orang Mumet</div>
+                  <div class="text-base font-medium text-gray-500 dark:text-gray-400">Orang Gila</div>
                 </div>
               </div>
             </footer>
